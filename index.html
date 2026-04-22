@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toprak ve Şeker | Butik Patisserie</title>
+    <meta name="description" content="Anadolu'nun izinde butik lezzetler. Coğrafi işaretli ürünler, modern pastacılık ve gastronomi atölyeleri.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <i class="fa-solid fa-leaf"></i> Toprak & Şeker
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#hero">Ana Sayfa</a></li>
+                    <li><a href="#chef">Şef</a></li>
+                    <li><a href="#story">Hikayemiz</a></li>
+                    <li class="dropdown">
+                        <a href="#products">Ürünler <i class="fa-solid fa-chevron-down text-sm"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#menu">Menü</a></li>
+                            <li><a href="#gifts">Hediyelik</a></li>
+                            <li><a href="#workshop">Atölye</a></li>
+                            <li><a href="#clothing">Giysi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <select class="lang-select" aria-label="Dil Seçimi">
+                    <option value="tr">TR</option>
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                    <option value="fr">FR</option>
+                    <option value="es">ES</option>
+                    <option value="ru">RU</option>
+                    <option value="zh">ZH</option>
+                </select>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Kültüründen Gastronomiye</p>
+            <h1>Toprak ve Şeker</h1>
+            <p class="slogan">"Tat, topraktan başlar."<br>Anadolu'nun izinde butik lezzetler.</p>
+            <a href="#menu" class="btn btn-primary">Lezzetleri Keşfet</a>
+        </div>
+    </section>
+
+    <section id="chef" class="section-padding bg-light">
+        <div class="container chef-grid">
+            <div class="chef-image">
+                <img src="https://images.unsplash.com/photo-1577214495708-4c316742a032?auto=format&fit=crop&w=600&q=80" alt="Şef Buğrahan Altındirek">
+            </div>
+            <div class="chef-text">
+                <h2 class="section-title">Şef Buğrahan Altındirek</h2>
+                <p>Anadolu'nun zengin topraklarında yetişen coğrafi işaretli ürünleri, modern ve butik pastacılık teknikleriyle buluşturuyoruz. Amacımız, misafirlerimize sadece bir tatlı değil, kökleri Anadolu'ya dayanan bir gastronomi deneyimi sunmaktır.</p>
+                <a href="#story" class="btn btn-outline">Hikayemizi Oku</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Vitrin Menüsü</h2>
+            <p class="text-center mb-4">İkonlu (<i class="fa-solid fa-map-location-dot text-green"></i>) ürünlerimiz coğrafi işaretli yerel malzemelerle hazırlanmıştır.</p>
+            
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3><i class="fa-solid fa-cake-candles"></i> Tatlılar</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Anadolu Esintili Tart <i class="fa-solid fa-map-location-dot text-green" title="Coğrafi İşaretli"></i></h4>
+                                <span class="ingredients">Aydın inciri, ceviz, özel krema</span>
+                            </div>
+                            <span class="price">₺180</span>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Zaher Torte</h4>
+                                <span class="ingredients">Bitter çikolata, kayısı marmelatı</span>
+                            </div>
+                            <span class="price">₺210</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-category" id="gifts">
+                    <h3><i class="fa-solid fa-gift"></i> Hediyelik Eşya</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>Özel Baharat Seti <i class="fa-solid fa-map-location-dot text-green"></i></h4>
+                                <span class="ingredients">Yöresel tarif kartı ile birlikte</span>
+                            </div>
+                            <span class="price">₺350</span>
+                        </li>
+                        <li>
+                            <div class="menu-item-info">
+                                <h4>El Yapımı Reçel Seçkisi</h4>
+                                <span class="ingredients">Mevsim meyveleri, şekersiz</span>
+                            </div>
+                            <span class="price">₺250</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section bg-light">
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <div class="review-card">"Tatlıların içindeki o yerel dokunuş muazzam. Bodrum'da böyle bir konsept harika." - Elena M.</div>
+                <div class="review-card">"Workshop harikaydı! Hem öğrendik hem de çok eğlendik." - Ayşe K.</div>
+                <div class="review-card">"Ülkeme dönerken aldığım baharat seti favorim oldu, tarifler çok net." - John D.</div>
+                <div class="review-card">"Modern ama bir o kadar da geleneksel. Kahveleri de çok başarılı." - Can B.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workshop" class="section-padding">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Atölye Rezervasyonu</h2>
+            <p class="text-center mb-4">Grup katılımlarında özel indirimler uygulanmaktadır.</p>
+            <form id="reservation-form" class="custom-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Ad Soyad" required>
+                    <input type="email" placeholder="E-posta" required>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="" disabled selected>Atölye Seçiniz</option>
+                        <option value="modern">Modern Türk Tatlıları</option>
+                        <option value="serbet">Geleneksel Şerbetli Tatlılar</option>
+                    </select>
+                    <input type="date" required>
+                </div>
+                <textarea placeholder="Eklemek istedikleriniz (Grup kişi sayısı vb.)" rows="4"></textarea>
+                <button type="submit" class="btn btn-primary w-100">Rezervasyon Talebi Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h2>Haberdar Olun</h2>
+            <p>Yeni ürünler, indirimler ve atölye tarihlerinden haberdar olmak için e-bültene abone olun.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" placeholder="E-posta adresiniz" required>
+                <button type="submit" class="btn btn-dark">Abone Ol</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-leaf"></i> Toprak & Şeker</h3>
+                <p>Anadolu'nun İzinde Butik Lezzetler</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bodrum / Muğla</p>
+            </div>
+            <div class="footer-links">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="#menu">Menü</a></li>
+                    <li><a href="#workshop">Atölye</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>İletişim</h4>
+                <p><i class="fa-solid fa-phone"></i> +90 252 052 5252</p>
+                <p><i class="fa-solid fa-envelope"></i> info@toprakveseker.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Toprak & Şeker. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <div class="ai-chat-widget" id="ai-chat" title="Canlı Destek">
+        <i class="fa-solid fa-robot"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
